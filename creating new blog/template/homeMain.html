@@ -1,0 +1,12 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Main Page</h1>
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">{{ blog.title }}</a>
+    </div>
+    <h2><a class="article-title" href="#">{{ blog.name }}</a></h2>
+    <p class="article-content">{{ blog.description }}</p>
+  </div>
+</article>
+{% endblock content %}
