@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+#demo{
+    position: absolute;
+    top:40%;
+    left:40%;
+    color:transparent;
+    text-shadow: 0 0 4px #e1fa04d7;
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: Helvetica;
+  background: #ffffff;
+}
+nav {
+  background: #f020b1;
+}
+
+.bread-crumbs {
+  text-align: center;
+}
+
+.bread-crumbs ul {
+  list-style: none;
+  display: inline-table;
+}
+
+.bread-crumbs ul li {
+  display: inline;
+}
+
+.bread-crumbs ul li a {
+  display: block;
+  float: left;
+  height: 80px;
+  background: transparent;
+  text-align: center;
+  padding: 30px 20px 0 60px;
+  position: relative;
+  margin: 0 10px 0 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: #8093a7;
+}
+
+.bread-crumbs ul li a:after {
+  content: "";
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  z-index: 1;
+}
+
+.bread-crumbs ul li a:before {
+  content: "";
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bread-crumbs ul li:first-child a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bread-crumbs ul li:first-child a:before {
+  display: none;
+}
+
+.bread-crumbs ul li:last-child a {
+  padding-right: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.bread-crumbs ul li:last-child a:after {
+  display: none;
+}
+
+.bread-crumbs ul li a:hover {
+  background: #0d8dc9;
+  color: #d3a40b;
+}
+
+.bread-crumbs ul li a:hover:after {
+  border-left-color: #0d8dc9;
+  color: #d3a40b;
+}
