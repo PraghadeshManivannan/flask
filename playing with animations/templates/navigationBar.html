@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='navigationBar.css') }}"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="bread-crumbs">
+          <ul>
+            <li>
+              <a href="/home"><i aria-hidden="true"></i>Home</a>
+            </li>
+            <li>
+              <a href="/glowingText"><i aria-hidden="true"></i>Glowing Text</a>
+            </li>
+            <li>
+              <a href="/gradientText"
+                ><i aria-hidden="true"></i>Gradient Text</a
+              >
+            </li>
+            <li>
+              <a href="/typingEffect"
+                ><i aria-hidden="true"></i>Typing Effect</a
+              >
+            </li>
+            <li>
+              <a href="/loaderAnimation"
+                ><i aria-hidden="true"></i>Animated loader</a
+              >
+            </li>
+            <li></li>
+            <li>
+              <a href="/flipLoading"><i></i>Flip Loading</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
